@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Support Hilfe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+    <header class="hero">
+        <img src="Bilder/support-900x400.jpg" alt="IT Support" class="hero-image">
+        <h1>IT Support Hilfe</h1>
+        <img src="Bilder/IT-Support Logo.jpg" alt="IT Support Logo" class="hero-logo">
+        <p>Wählen Sie zuerst ein Problem und dann eine passende Situation aus.</p>
+    </header>
+</div>
+        <main class="container">
+            <section class="card">
+                <h2>1. Problem auswählen</h2>
+                <div class="buttons">
+                    <button onclick="selectProblem('internet')">🌐 Internet</button>
+                    <button onclick="selectProblem('pc')">⚡ Langsamer PC</button>
+                    <button onclick="selectProblem('drucker')">🖨️ Drucker</button>
+                    <button onclick="selectProblem('bildschirm')">🖥️ Bildschirm</button>
+                </div>
+            </section>
+
+            <section class="card" id="optionBox">
+                <h2>2. Mögliche Situation</h2>
+                <p>Hier erscheinen die passenden Optionen.</p>
+            </section>
+
+            <section class="card result-card" id="resultBox">
+                <h2>3. Lösung</h2>
+                <p>Hier erscheinen später die Lösungsvorschläge.</p>
+            </section>
+        </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
